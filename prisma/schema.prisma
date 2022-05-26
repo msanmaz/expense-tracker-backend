@@ -25,3 +25,14 @@ model Posts {
   id Int @id @default(autoincrement())
   post String
 }
+
+
+
+model Expense {
+  id       Int      @id @default(autoincrement())
+  trip     Int
+  name     String
+  date     DateTime @default(now())
+  amount   Int
+  currency String
+}
